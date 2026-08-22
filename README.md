@@ -21,15 +21,6 @@ sudo apt update
 sudo apt install docker-ce docker-ce-cli containerd.io docker-buildx-plugin docker-compose-plugin
 ```
 ## RedHat-based Linux
-### Check & install dependencies
-```bash
-rpm -q ca-certificates curl
-```
-```bash
-dnf check-update  
-sudo dnf install ca-certificates  
-sudo dnf install curl
-```
 ### Installation
 ```bash
 sudo dnf config-manager addrepo --from-repofile https://download.docker.com/linux/fedora/docker-ce.repo  
