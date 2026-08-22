@@ -40,10 +40,24 @@ sudo dnf install docker-ce docker-ce-cli containerd.io docker-buildx-plugin dock
 # Check/Start/enable
 ```bash
 docker --version
+docker compose version
 ```
 ```bash
 sudo systemctl status docker
 ```
 ```bash
 sudo systemctl enable --now docker  
+```
+
+# Test
+```bash
+docker info
+```
+Run docker container by specifying the exact registry/library/image  
+```bash
+sudo docker run docker.io/library/hello-world
+```
+If you just type the image name, Docker will search for the image in default registry (Local cache/Docker Hub)   
+```bash
+sudo docker run hello-word
 ```
