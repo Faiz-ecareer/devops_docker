@@ -39,7 +39,11 @@ sudo dnf install docker-ce docker-ce-cli containerd.io docker-buildx-plugin dock
 ```
 # Check/Start/enable
 ```bash
-docker --version  
+docker --version
+```
+```bash
 sudo systemctl status docker
+```
+```bash
 sudo systemctl enable --now docker  
 ```
