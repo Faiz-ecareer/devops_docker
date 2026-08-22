@@ -1,12 +1,11 @@
-# devops_docker
-Docker projects as part of my DevOps journey.  
-
 # Docker Installation on Linux server
 
 ## Debian-based Linux
 ### Check & install dependencies
 ```bash
-dpkg -s ca-certificates curl    
+dpkg -s ca-certificates curl  
+```
+```bash
 apt update  
 sudo apt install ca-certificates  
 sudo apt install curl
@@ -24,7 +23,9 @@ sudo apt install docker-ce docker-ce-cli containerd.io docker-buildx-plugin dock
 ## RedHat-based Linux
 ### Check & install dependencies
 ```bash
-rpm -q ca-certificates curl    
+rpm -q ca-certificates curl
+```
+```bash
 dnf check-update  
 sudo dnf install ca-certificates  
 sudo dnf install curl
@@ -40,6 +41,5 @@ sudo dnf install docker-ce docker-ce-cli containerd.io docker-buildx-plugin dock
 ```bash
 docker --version  
 sudo systemctl status docker
-```
 sudo systemctl enable --now docker  
-
+```
